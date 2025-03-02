@@ -136,12 +136,11 @@
                             height: 150,
                         });
 
-                        let barcodeSvg = etiquetaDiv.querySelector(".barcode");
                         JsBarcode(barcodeSvg, codeValue.toString(), {
-                            format: "CODE128",
-                            displayValue: true
-                            fontSize: 30
-                        });
+                           format: "CODE128",
+                           displayValue: true,
+                           fontSize: 30 // Ajusta este valor según necesites
+                          });
 
                         // Rotación de código de barras
                         barcodeSvg.style.transform = "rotate(-90deg)";
